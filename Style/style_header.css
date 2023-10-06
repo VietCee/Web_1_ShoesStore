@@ -1,0 +1,101 @@
+.app {
+  height: 100%;
+}
+
+.header {
+  height: 62px;
+  width: 100%;
+  padding: 0 40px;
+  background-color: var(--bs-white);
+  display: flex;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  overflow: hidden;
+  z-index: 999;
+}
+
+.header__navbar {
+  width: 236px;
+  height: 100%;
+}
+
+.header__navbar-img {
+  width: 122px;
+  height: 54px;
+  margin: 4px 0 0 22px;
+  padding: 0 5px 5px 0;
+}
+
+.header__list {
+  width: 65%;
+  height: 100%;
+}
+
+.header__navbar-list {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__navbar-item {
+  float: left;
+  display: inline;
+  height: 100%;
+}
+
+.header__navbar-item-link {
+  display: block;
+  text-decoration: none;
+  font-size: 1.7rem;
+  color: #333;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  padding: 20px 10px;
+  margin: 4px 5px 0 5px;
+  text-transform: uppercase;
+}
+
+.header__search {
+  float: left;
+  line-height: 5.7rem;
+  padding: 0 5px 0 15px;
+}
+
+.header__search-input {
+  border: none;
+  background: none;
+  width: 72px;
+  font-size: 1.35rem;
+  padding: 0;
+  padding-right: 15px;
+  color: #757575;
+  transition: 0.4s;
+}
+
+.header__search-btn {
+  background: none;
+  border: none;
+  padding-left: 4px;
+}
+
+.fa-magnifying-glass {
+  font-size: 1.4rem;
+  color: #2d2d2d;
+}
+
+.header__icon {
+  float: left;
+  line-height: 5.7rem;
+  padding: 3px 5px;
+  margin-left: 40px;
+}
+
+.fa-user,
+.fa-bag-shopping {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #333;
+}
