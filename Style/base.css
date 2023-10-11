@@ -80,6 +80,33 @@ input::placeholder {
   font: inherit;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: calc(1.3em + 1vw);
+  font-weight: var(--fw8);
+  line-height: 1;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: var(--fw7);
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: var(--fw6);
+}
+
 /* RESUABLE SELECTOR */
 .container {
   max-width: 1280px;
@@ -116,4 +143,11 @@ input::placeholder {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 992px) {
+  .container {
+    padding: 0 2em;
+  }
 }
