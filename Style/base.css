@@ -150,4 +150,21 @@ h4 {
   .container {
     padding: 0 2em;
   }
+  /* slider */
+  .slider > div > .wrapper {
+    width: calc(100% - (300px + 2 em));
+    margin-left: 350px;
+  }
+
+  /* footer */
+  .newsletter .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .widgets .flexwrap {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

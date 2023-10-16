@@ -10,10 +10,10 @@
     />
 
     <!-- Base, Style CSS -->
-    <link rel="stylesheet" href="./Style/base.css" />
     <link rel="stylesheet" href="./Style/style_header.css" />
     <link rel="stylesheet" href="./Style/style_main.css" />
     <link rel="stylesheet" href="./Style/style_footer.css" />
+    <link rel="stylesheet" href="./Style/base.css" />
 
     <!-- Icon -->
     <link
@@ -25,6 +25,11 @@
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
       rel="stylesheet"
+    />
+    <!-- silder -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
 
     <title>Shoe-Store</title>
@@ -77,10 +82,10 @@
                         ><i class="ri-arrow-down-s-line"></i></span
                     ></a>
                     <ul>
-                      <li><a href="">USD</a></li>
-                      <li><a href="">EURO</a></li>
-                      <li><a href="">GBP</a></li>
-                      <li><a href="">IDR</a></li>
+                      <li class="current"><a href="#">USD</a></li>
+                      <li><a href="#">EURO</a></li>
+                      <li><a href="#">GBP</a></li>
+                      <li><a href="#">VND</a></li>
                     </ul>
                   </li>
                   <li class="has-child">
@@ -90,10 +95,9 @@
                         ><i class="ri-arrow-down-s-line"></i></span
                     ></a>
                     <ul>
-                      <li><a href="">ENGLISH</a></li>
-                      <li><a href="">GERMAN</a></li>
-                      <li><a href="">SPANISH</a></li>
-                      <li><a href="">BAHASA</a></li>
+                      <li class="current"><a href="#">English</a></li>
+                      <li><a href="#">Vietnamese</a></li>
+                      <li><a href="#">Spanish</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -101,13 +105,13 @@
             </div>
           </div>
         </div>
-
         <!-- !header-top -->
 
+        <!-- header-nav -->
         <div class="header-nav">
           <div class="container">
             <div class="wrapper flexitem">
-              <a href="" class="trigger desktop-hide"
+              <a href="#" class="trigger desktop-hide"
                 ><span><i class="ri-menu-2-line"></i></span
               ></a>
               <div class="left flexitem">
@@ -120,7 +124,7 @@
                     <li><a href="#">Shop</a></li>
                     <li class="has-child">
                       <a href="#"
-                        >Women
+                        >Trademark
                         <div class="icon-small">
                           <i class="ri-arrow-down-s-line"></i>
                         </div>
@@ -130,23 +134,34 @@
                           <div class="wrapper">
                             <div class="flexcol">
                               <div class="row">
-                                <h4>Women's Style</h4>
+                                <h4>Sports Brands</h4>
                                 <ul>
-                                  <li><a href="#">youthful</a></li>
-                                  <li><a href="#">elegant</a></li>
-                                  <li><a hr ef="#">high fashioned</a></li>
-                                  <li><a href="#">lady</a></li>
-                                  <li><a href="#">Noble</a></li>
+                                  <li><a href="#">Nike</a></li>
+                                  <li><a href="#">Adidas</a></li>
+                                  <li><a hr ef="#">Puma</a></li>
+                                  <li><a href="#">New Balance</a></li>
+                                  <li><a href="#">Skechers</a></li>
+                                  <li><a href="#">Reebok</a></li>
+                                  <li><a href="#">Asic</a></li>
+                                  <li><a href="#">Under Armour</a></li>
+                                  <li><a href="#">Vans</a></li>
+                                  <li><a href="#">ON RUNNING</a></li>
                                 </ul>
                               </div>
                             </div>
                             <div class="flexcol">
                               <div class="row">
-                                <h4>Size</h4>
+                                <h4>Luxury Brand</h4>
                                 <ul>
-                                  <li><a href="#">All Sizes</a></li>
-                                  <li><a href="#">Sizes 35-40</a></li>
-                                  <li><a href="#">Sizes Above 40</a></li>
+                                  <li><a href="#">Christian Louboutin</a></li>
+                                  <li><a href="#">Jimmy Choo</a></li>
+                                  <li><a href="#">Louis Vuitton</a></li>
+                                  <li><a href="#">Dolce & Gabbana</a></li>
+                                  <li><a href="#">Prada</a></li>
+                                  <li><a href="#">Valentino</a></li>
+                                  <li><a href="#">Salvatore Ferragamo</a></li>
+                                  <li><a href="#">Fendi</a></li>
+                                  <li><a href="#">Hermès</a></li>
                                 </ul>
                               </div>
                             </div>
@@ -154,11 +169,22 @@
                               <div class="row">
                                 <h4>Product Categories</h4>
                                 <ul>
-                                  <li><a href="#">Sneakers</a></li>
+                                  <li><a href="#">Sports Shoes</a></li>
                                   <li><a href="#">Athletic Shoes</a></li>
-                                  <li><a href="#">Flats</a></li>
+                                  <li><a href="#">Fashion Shoes</a></li>
                                   <li><a href="#">Office Shoes</a></li>
-                                  <li><a href="#">Sandals</a></li>
+                                  <li><a href="#">Industrial Shoes</a></li>
+                                  <li><a href="#">Children's Shoes</a></li>
+                                  <li>
+                                    <a href="#">Specialized Sports Footwear</a>
+                                  </li>
+                                  <li><a href="#">Seasonal Footwear</a></li>
+                                  <li>
+                                    <a href="#">Travel and Hiking Boots</a>
+                                  </li>
+                                  <li>
+                                    <a href="#">High-End Fashion Footwear</a>
+                                  </li>
                                 </ul>
                               </div>
                             </div>
@@ -170,10 +196,14 @@
                                   <li><a href="#">Converse</a></li>
                                   <li><a href="#">Adidas</a></li>
                                   <li><a href="#">Vans</a></li>
-                                  <li><a href="#">New Balance</a></li>
+                                  <li><a href="#">NB550</a></li>
                                   <li><a href="#">MLB</a></li>
                                   <li><a href="#">Puma</a></li>
                                   <li><a href="#">Reebok</a></li>
+                                  <li><a href="#">Gucci</a></li>
+                                  <li><a href="#">Balenciaga</a></li>
+                                  <li><a href="#">Asics</a></li>
+                                  <li><a href="#">Under Armour</a></li>
                                 </ul>
                                 <a href="#" class="view-all"
                                   >View all brands
@@ -186,14 +216,17 @@
                                 <div class="media">
                                   <div class="thumbnail object-cover">
                                     <a href="#">
-                                      <img src="header-img/Mau-2.jpg" alt="" />
+                                      <img
+                                        src="./assets/Shoe/shoe4.jpg"
+                                        alt=""
+                                      />
                                     </a>
                                   </div>
                                 </div>
                                 <div class="text-content">
                                   <h4>Most wanted!</h4>
-                                  <a href="" class="primary-button"
-                                    >order now</a
+                                  <a href="#" class="primary-button"
+                                    >Order Now</a
                                   >
                                 </div>
                               </div>
@@ -202,10 +235,10 @@
                         </div>
                       </div>
                     </li>
-                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Community</a></li>
                     <li>
                       <a href="#"
-                        >Child
+                        >Sports
                         <div class="fly-item"><span>New!</span></div>
                       </a>
                     </li>
@@ -224,19 +257,133 @@
                       </div>
                     </a>
                   </li>
-                  <li>
-                    <a href="">
+                  <li class="iscart">
+                    <a href="#">
                       <div class="icon-large">
                         <i class="ri-shopping-cart-line"></i>
                         <div class="fly-item">
-                          <span class="item-number">0</span>
+                          <span class="item-number">5</span>
                         </div>
                       </div>
                       <div class="icon-text">
                         <div class="mini-text">Total</div>
-                        <div class="cart-total">8.00$</div>
+                        <div class="cart-total">0.00$</div>
                       </div>
                     </a>
+                    <div class="mini-cart">
+                      <div class="content">
+                        <div class="cart-head">5 items in cart</div>
+                        <div class="cart-body">
+                          <ul class="products mini">
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/home1.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Dimmable Ceiling Light Modern</a>
+                                </p>
+                                <span class="price">
+                                  <span>$279.99</span>
+                                  <span class="fly-item"><span>2x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/home1.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Dimmable Ceiling Light Modern</a>
+                                </p>
+                                <span class="price">
+                                  <span>$279.99</span>
+                                  <span class="fly-item"><span>2x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/home1.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Dimmable Ceiling Light Modern</a>
+                                </p>
+                                <span class="price">
+                                  <span>$279.99</span>
+                                  <span class="fly-item"><span>2x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/home1.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Dimmable Ceiling Light Modern</a>
+                                </p>
+                                <span class="price">
+                                  <span>$279.99</span>
+                                  <span class="fly-item"><span>2x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                            <li class="item">
+                              <div class="thumbnail object-cover">
+                                <a href="#"
+                                  ><img src="assets/products/home1.jpg" alt=""
+                                /></a>
+                              </div>
+                              <div class="item-content">
+                                <p>
+                                  <a href="#">Dimmable Ceiling Light Modern</a>
+                                </p>
+                                <span class="price">
+                                  <span>$279.99</span>
+                                  <span class="fly-item"><span>2x</span></span>
+                                </span>
+                              </div>
+                              <a href="" class="item-remove"
+                                ><i class="ri close-line"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="cart-footer">
+                          <div class="subtotal">
+                            <p>Subtotal</p>
+                            <p><strong>$1,622,95</strong></p>
+                          </div>
+                          <div class="actions">
+                            <a href="#" class="primary-button">Checkout</a>
+                            <a href="#" class="secondary-button">View Cart</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -251,7 +398,7 @@
                 <div class="dpt-cat">
                   <div class="dpt-head">
                     <div class="main-text">All Departments</div>
-                    <div class="mini-text mobile-hide">Total 2000 Products</div>
+                    <div class="mini-text mobile-hide">Total 1000 Products</div>
                     <a href="#" class="dpt-trigger mobile-hide">
                       <i class="ri-menu-3-line ri-xl"></i>
                     </a>
@@ -259,9 +406,9 @@
                   <div class="dpt-menu">
                     <ul class="second-links">
                       <li class="has-child Athletic">
-                        <a href="">
+                        <a href="#">
                           <div class="icon-large">
-                            <i class="ri-shining-line"></i>
+                            <i class="ri-run-line"></i>
                           </div>
                           Athletic Shoes
                           <div class="icon-small">
@@ -269,48 +416,20 @@
                           </div>
                         </a>
                         <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Salomone Men's
-                              XA Pro 3D V8 GTX Trail Running Shoes Ebony /
-                              Caramel Cafe / Black</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Nike Air
-                              Jordan 3 Retro Fire Red</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Adidas
-                              RUNFALCON 3.0 SHOES</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Goya Training
-                              Plus 2023</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Flyknit Racer
-                              rainbow</a
-                            >
-                          </li>
-                          <br />
+                          <li><a href="#">Nike</a></li>
+                          <li><a href="#">Adidas</a></li>
+                          <li><a href="#">Reebok</a></li>
+                          <li><a href="#">Under Armour</a></li>
+                          <li><a href="#">Puma</a></li>
+                          <li><a href="#">Hoka One One</a></li>
+                          <li><a href="#">Salomon</a></li>
+                          <li><a href="#">Brooks</a></li>
                         </ul>
                       </li>
                       <li class="has-child Running">
                         <a href="">
                           <div class="icon-large">
-                            <i class="ri-shining-line"></i>
+                            <i class="ri-walk-line"></i>
                           </div>
                           Running Shoes
                           <div class="icon-small">
@@ -318,48 +437,20 @@
                           </div>
                         </a>
                         <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>running adidas
-                              Duramo 10 nam GW8336</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>running adidas
-                              Alphabounce EK GY5401</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Nike Zoom Fly
-                              5 – Racer Blue/High Voltage/Sundial –
-                              DM8968-402</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Under Armour
-                              HOVR Sonic 6</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>adidas Men's
-                              Running Shoes</a
-                            >
-                          </li>
-                          <br />
+                          <li><a href="#">Nike</a></li>
+                          <li><a href="#">Adidas</a></li>
+                          <li><a href="#">New Balance</a></li>
+                          <li><a href="#">Under Armour</a></li>
+                          <li><a href="#">Topo Athletic</a></li>
+                          <li><a href="#">Hoka One One</a></li>
+                          <li><a href="#">Salomon</a></li>
+                          <li><a href="#">On Running</a></li>
                         </ul>
                       </li>
                       <li class="has-child Soccer">
-                        <a href="">
+                        <a href="#">
                           <div class="icon-large">
-                            <i class="ri-shining-line"></i>
+                            <i class="ri-football-line"></i>
                           </div>
                           Soccer Shoes
                           <div class="icon-small">
@@ -367,282 +458,110 @@
                           </div>
                         </a>
                         <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Zocker
-                              Pioneer</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Zocker 1902
-                              Lake</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>NIKE ZOOM
-                              MERCURIAL VAPOR 15 PRO TF - DJ5605-146</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Zocker Inspire
-                              PRO</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Viralto II
-                              TF</a
-                            >
-                          </li>
-                          <br />
+                          <li><a href="#">Nike</a></li>
+                          <li><a href="#">Adidas</a></li>
+                          <li><a href="#">Puma</a></li>
+                          <li><a href="#">Mizuno</a></li>
+                          <li><a href="#">Under Armour</a></li>
+                          <li><a href="#">Diadora</a></li>
+                          <li><a href="#">Umbro</a></li>
+                          <li><a href="#">Kelme</a></li>
                         </ul>
                       </li>
-                      <li class="has-child Basketball">
+                      <li class="has-child">
                         <a href="">
                           <div class="icon-large">
-                            <i class="ri-shining-line"></i>
+                            <i class="ri-basketball-fill"></i>
                           </div>
                           Basketball Shoes
-                          <div class="icon-small">
-                            <i class="ri-arrow-right-s-line"></i>
-                          </div>
                         </a>
-                        <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Nike Kd Trey 5
-                              X Ep</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Mizuno
-                              Monarcida Neo II Select AS - P1GD210509</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Under Armour
-                              Tribase Reign 5</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Unisex Under
-                              Armour Curry Splash 3</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Nike Air
-                              Jordan Xxxvii Low Pf</a
-                            >
-                          </li>
-                          <br />
-                        </ul>
                       </li>
-                      <li class="has-child Jogging">
-                        <a href="">
+                      <li class="has-child">
+                        <a href="#">
                           <div class="icon-large">
-                            <i class="ri-shining-line"></i>
+                            <i class="ri-walk-line"></i>
                           </div>
                           Jogging Shoes
-                          <div class="icon-small">
-                            <i class="ri-arrow-right-s-line"></i>
-                          </div>
                         </a>
-                        <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>UNISEX
-                              GEL-ROCKET 11</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Under Armour
-                              Infinite 5</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Under Armour
-                              Flow Velociti Se</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Under Armour
-                              Flow TR</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Nam Under
-                              Armour Hovr Phantom 3</a
-                            >
-                          </li>
-                          <br />
-                        </ul>
                       </li>
-                      <li class="has-child Walking">
-                        <a href="">
+                      <li class="has-child">
+                        <a href="#">
                           <div class="icon-large">
-                            <i class="ri-shining-line"></i>
+                            <i class="ri-walk-line"></i>
                           </div>
                           Walking Shoes
-                          <div class="icon-small">
-                            <i class="ri-arrow-right-s-line"></i>
-                          </div>
                         </a>
-                        <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Sneaker Goya
-                              GY232</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Columbia
-                              TRAILSTORM™ WATERPROOF</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Adidas ZG23
-                              GOLF SHOES</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Nike E-Series
-                              1.0</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Under Armour
-                              FLOW Velociti Wind 2</a
-                            >
-                          </li>
-                          <br />
-                        </ul>
                       </li>
-                      <li class="has-child shoes-list High-Heels">
-                        <a href="">
+                      <li class="has-child">
+                        <a href="#">
                           <div class="icon-large">
                             <i class="ri-shining-line"></i>
                           </div>
                           High Heels
-                          <div class="icon-small">
-                            <i class="ri-arrow-right-s-line"></i>
-                          </div>
                         </a>
-                        <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Super High
-                              Heels Platform Colourful Sandals</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Denovas Womens
-                              Patent Very High Heel Big Size Knee Show Boot</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Giày Saint
-                              Laurent Opyum Pumps Patent Leather Black Heel
-                              4720110NPVV1000 -37</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Brillant High
-                              Heels</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>Ecco Shape
-                              Stiletto 45</a
-                            >
-                          </li>
-                          <br />
-                        </ul>
                       </li>
-                      <li class="has-child Loafers">
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-bear-smile-line"></i>
+                          </div>
+                          Loafers
+                        </a>
+                      </li>
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-user-smile-fill"></i>
+                          </div>
+                          Children's Shoes
+                        </a>
+                      </li>
+                      <li class="has-child season">
                         <a href="">
                           <div class="icon-large">
                             <i class="ri-shining-line"></i>
                           </div>
-                          Loafers
+                          Seasonal Footwear
                           <div class="icon-small">
                             <i class="ri-arrow-right-s-line"></i>
                           </div>
                         </a>
-                        <ul>
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>BELGIAN
-                              LOAFER</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>BROGUE
-                              SLIPPER</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#">
-                              <i class="ri-arrow-right-line"></i>PENNY LOAFER</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#">
-                              <i class="ri-arrow-right-line"></i>DOUBLE BUCKLE
-                              LOAFER</a
-                            >
-                          </li>
-                          <br />
-                          <li>
-                            <a href="#"
-                              ><i class="ri-arrow-right-line"></i>HORSEBIT
-                              LOAFER</a
-                            >
-                          </li>
-                          <br />
-                        </ul>
+                        <div class="mega">
+                          <div class="flexcol">
+                            <div class="row">
+                              <h4><a href="#"></a>Autumn & Winter</h4>
+                              <ul>
+                                <li><a href="#">Winter Boots</a></li>
+                                <li><a href="#">Sheepskin Boots</a></li>
+                                <li><a href="#">Insulated Leather Boots</a></li>
+                                <li><a href="#">Knee-High Boots</a></li>
+                                <li>
+                                  <a href="#">Waterproof Leather Boots</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="row">
+                              <h4><a href="#"></a>Spring & Summer</h4>
+                              <ul>
+                                <li><a href="#">Sandal</a></li>
+                                <li><a href="#">Flip-Flops</a></li>
+                                <li><a href="#">Breathable Sneakers</a></li>
+                                <li><a href="#">Espadrilles</a></li>
+                                <li>
+                                  <a href="#">Summer Athletic Shoes</a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="has-child">
+                        <a href="">
+                          <div class="icon-large">
+                            <i class="ri-bear-smile-line"></i>
+                          </div>
+                          Specialized Sports Footwear
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -665,6 +584,122 @@
       </header>
 
       <main>
+        <div class="slider">
+          <div class="container">
+            <div class="wrapper">
+              <div class="myslider swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img src="assets/slider/slider0.jpg" alt="" />
+                      </div>
+                      <div class="text-content flexcol">
+                        <h4>Shoes Fashion</h4>
+                        <h1>
+                          <span>Come and get it!</span><br /><span
+                            >Brand new Shoes</span
+                          >
+                        </h1>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img src="assets/slider/slider1.jpg" alt="" />
+                      </div>
+                      <div class="text-content flexcol">
+                        <h4>Shoes Fashion</h4>
+                        <h1>
+                          <span>Come and get it!</span><br /><span
+                            >Brand new Shoes</span
+                          >
+                        </h1>
+                        <a href="#" class="primary-button">Shop now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img src="assets/slider/slider2.jpg" alt="" />
+                      </div>
+                      <div class="text-content flexcol">
+                        <h4>Shoes Fashion</h4>
+                        <h1>
+                          <span>Come and get it!</span><br /><span
+                            >Brand new Shoes</span
+                          >
+                        </h1>
+                        <a href="#" class="primary-button">Shop now</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <div class="image object-cover">
+                        <img src="assets/slider/slider3.jpg" alt="" />
+                      </div>
+                      <div class="text-content flexcol">
+                        <h4>Shoes Fashion</h4>
+                        <h1>
+                          <span>Come and get it!</span><br /><span
+                            >Brand new Shoes</span
+                          >
+                        </h1>
+                        <a href="#" class="primary-button">Shop now</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Slider -->
+
+        <div class="brands">
+          <div class="container">
+            <div class="wrapper flexitem">
+              <div class="item">
+                <a style="height: 70px; width: 120px" href="#">
+                  <img src="/assets/brands/nike.jpg" alt="" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="assets/brands/adidas.png" alt="" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="assets/brands/puma.png" alt="" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="assets/brands/vans.png" alt="" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="assets/brands/Converse.png" alt="" />
+                </a>
+              </div>
+              <div class="item">
+                <a href="#">
+                  <img src="assets/brands/New_Balance.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- brand -->
+
         <div class="trending">
           <div class="container">
             <div class="wrapper">
@@ -741,7 +776,7 @@
                     </div>
                   </div>
                   <!-- products1 -->
-                  <div class="row products mini">
+                  <div class="row products mini mini1">
                     <div class="item">
                       <div class="media">
                         <div class="thumbnail object-cover">
@@ -915,7 +950,7 @@
                     </div>
                   </div>
                   <!-- products2 -->
-                  <div class="row products mini">
+                  <div class="row products mini mini2">
                     <div class="item">
                       <div class="media">
                         <div class="thumbnail object-cover">
@@ -1137,10 +1172,10 @@
                             <a href="#"><i class="ri-heart-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-eye-line"></i></a>
+                            <a href="#"><i class="ri-eye-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-shuffle-line"></i></a>
+                            <a href="#"><i class="ri-shuffle-line"></i></a>
                           </li>
                         </ul>
                       </div>
@@ -1151,14 +1186,21 @@
                     <div class="content">
                       <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">(1508)</span>
+                        <span class="mini-text">(1053)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#">Nike Air Jordan 1 High Black White</a>
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$179.99</span>
+                        <span class="normal mini-text">$389.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1167,7 +1209,7 @@
                     <div class="media">
                       <div class="thumbnail object-cover">
                         <a href="#">
-                          <img src="./assets/products/air7.png" alt="img" />
+                          <img src="./assets/slider/slider8.jpg" alt="img" />
                         </a>
                       </div>
                       <div class="hoverable">
@@ -1190,14 +1232,21 @@
                     <div class="content">
                       <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">(1508)</span>
+                        <span class="mini-text">(908)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#">Jordan 1 Retro High OG Taxi Men's</a>
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$169.99</span>
+                        <span class="normal mini-text">$369.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1229,14 +1278,21 @@
                     <div class="content">
                       <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">(1508)</span>
+                        <span class="mini-text">(1102)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#">Nike Air Force 1 Shadow Multi-Color</a>
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$1669.99</span>
+                        <span class="normal mini-text">$369.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1245,7 +1301,7 @@
                     <div class="media">
                       <div class="thumbnail object-cover">
                         <a href="#">
-                          <img src="./assets/products/shoe1-2.jpg" alt="img" />
+                          <img src="./assets/Shoe/shoe1.png" alt="img" />
                         </a>
                       </div>
                       <div class="hoverable">
@@ -1254,10 +1310,10 @@
                             <a href="#"><i class="ri-heart-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-eye-line"></i></a>
+                            <a href="#"><i class="ri-eye-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-shuffle-line"></i></a>
+                            <a href="#"><i class="ri-shuffle-line"></i></a>
                           </li>
                         </ul>
                       </div>
@@ -1268,14 +1324,21 @@
                     <div class="content">
                       <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">(1508)</span>
+                        <span class="mini-text">(1053)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#">Nike Air Force 1 Pixel "Powder Blue"</a>
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$179.99</span>
+                        <span class="normal mini-text">$379.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1293,10 +1356,10 @@
                             <a href="#"><i class="ri-heart-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-eye-line"></i></a>
+                            <a href="#"><i class="ri-eye-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-shuffle-line"></i></a>
+                            <a href="#"><i class="ri-shuffle-line"></i></a>
                           </li>
                         </ul>
                       </div>
@@ -1307,14 +1370,24 @@
                     <div class="content">
                       <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">(1508)</span>
+                        <span class="mini-text">(958)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#"
+                          >Giày Nike Air Force 1 Low '07 'Iron Grey Volt
+                          Black'</a
+                        >
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$149.99</span>
+                        <span class="normal mini-text">$349.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1346,14 +1419,23 @@
                     <div class="content">
                       <div class="rating">
                         <div class="stars"></div>
-                        <span class="mini-text">(1508)</span>
+                        <span class="mini-text">(838)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#"
+                          >Nike Air Jordan 1 Retro High 'Pine Green Black'</a
+                        >
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$189.99</span>
+                        <span class="normal mini-text">$389.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1371,10 +1453,10 @@
                             <a href="#"><i class="ri-heart-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-eye-line"></i></a>
+                            <a href="#"><i class="ri-eye-line"></i></a>
                           </li>
                           <li>
-                            <a href=""><i class="ri-shuffle-line"></i></a>
+                            <a href="#"><i class="ri-shuffle-line"></i></a>
                           </li>
                         </ul>
                       </div>
@@ -1388,16 +1470,18 @@
                         <span class="mini-text">(1508)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#"
+                          >Nike Air Force 1 Low High 'White & Green'</a
+                        >
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$149.99</span>
+                        <span class="normal mini-text">$329.98</span>
                       </div>
                       <div class="footer">
                         <ul class="mini-text">
-                          <li>Polyester, Cotton</li>
-                          <li>Pull On closure</li>
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
                           <li>Fashion Personality</li>
                         </ul>
                       </div>
@@ -1434,11 +1518,20 @@
                         <span class="mini-text">(1508)</span>
                       </div>
                       <h3 class="main-links">
-                        <a href="#">Best Seller Product</a>
+                        <a href="#"
+                          >Nike Air Jordan 'Pink Oxford' & 'Celestine Blue'</a
+                        >
                       </h3>
                       <div class="price">
-                        <span class="current">$199.99</span>
-                        <span class="normal mini-text">$399.98</span>
+                        <span class="current">$189.99</span>
+                        <span class="normal mini-text">$389.98</span>
+                      </div>
+                      <div class="footer">
+                        <ul class="mini-text">
+                          <li>Premium Leather Material</li>
+                          <li>Beautiful, Luxurious</li>
+                          <li>Fashion Personality</li>
+                        </ul>
                       </div>
                     </div>
                   </div>
@@ -1447,13 +1540,244 @@
             </div>
           </div>
         </div>
+        <!-- features products -->
+
+        <div class="banners">
+          <div class="container">
+            <div class="wrapper">
+              <div class="column">
+                <div class="banner flexwrap">
+                  <div class="row">
+                    <div class="item">
+                      <div class="image">
+                        <img src="./assets/banner/banners3.jpg" alt="" />
+                      </div>
+                      <div class="text-content flexcol">
+                        <h4>Brutal Sale!</h4>
+                        <h3>
+                          <span class="image-span">Get the deal in here</span
+                          ><br />Visit the store
+                        </h3>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                      <a href="#" class="over-link"></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="item get-gray">
+                      <div class="image">
+                        <img
+                          class="image-banner2"
+                          src="./assets/banner/banner11.jpg"
+                        />
+                      </div>
+                      <div class="text-content flexcol">
+                        <h4>Brutal Sale!</h4>
+                        <h3>
+                          <span class="image-span">Get the deal in here</span
+                          ><br />Visit the store
+                        </h3>
+                        <a href="#" class="primary-button">Shop Now</a>
+                      </div>
+                      <a href="#" class="over-link"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
-
       <!-- main -->
-      <footer></footer>
-      <!-- footer -->
-    </div>
 
+      <footer>
+        <div class="newsletter">
+          <div class="container">
+            <div class="wapper">
+              <div class="box">
+                <div class="content">
+                  <h3>Join Our Newsletter</h3>
+                  <p>
+                    Get E-mail updates about our latest shop and
+                    <strong>special offers</strong>
+                  </p>
+                </div>
+                <form action="" class="search">
+                  <span class="icon-large"><i class="ri-mail-line"></i></span>
+                  <input
+                    type="mail"
+                    placeholder="Your email address"
+                    required
+                  />
+                  <button type="submit">Sign Up</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Newsletter -->
+        <div class="widgets">
+          <div class="container">
+            <div class="wrapper">
+              <div class="flexwrap">
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>Help & Contact</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Your Account</a></li>
+                      <li><a href="#">Your Orders</a></li>
+                      <li><a href="#">Shipping Rates</a></li>
+                      <li><a href="#">Returns</a></li>
+                      <li><a href="#">Assistant</a></li>
+                      <li><a href="#">Help</a></li>
+                      <li><a href="#">Contact us</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>Product Categories</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Nike</a></li>
+                      <li><a href="#">Adidas</a></li>
+                      <li><a href="#">Puma</a></li>
+                      <li><a href="#">Converse</a></li>
+                      <li><a href="#">Balenciaga</a></li>
+                      <li><a href="#">Vans</a></li>
+                      <li><a href="#">Off-White</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>Payment Info</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Bussiness Card</a></li>
+                      <li><a href="#">Shop with Points</a></li>
+                      <li><a href="#">Reload Your Balance</a></li>
+                      <li><a href="#">Paypal</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="item mini-links">
+                    <h4>About Us</h4>
+                    <ul class="flexcol">
+                      <li><a href="#">Company Infor</a></li>
+                      <li><a href="#">News</a></li>
+                      <li><a href="#">Investors</a></li>
+                      <li><a href="#">Carerrs</a></li>
+                      <li><a href="#">Policies</a></li>
+                      <li><a href="#">Customer reviews</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Widgets -->
+        <div class="footer-infor">
+          <div class="container">
+            <div class="wrapper">
+              <div class="flexcol">
+                <div class="logo">
+                  <a href=""><span class="circle"></span>.Store</a>
+                </div>
+                <div class="socials">
+                  <ul class="flexitem">
+                    <li>
+                      <a href="#"><i class="ri-twitter-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-facebook-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-instagram-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-linkedin-line"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="ri-youtube-line"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mini-text">
+                Copyright © 2023 .Store. All right reserved
+              </p>
+            </div>
+          </div>
+          <div class="top-page">
+            <a href="#page"><i class="ri-arrow-up-line"></i></a>
+          </div>
+        </div>
+      </footer>
+      <!-- footer -->
+
+      <div class="menu-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <nav>
+              <ul class="flexitem">
+                <li>
+                  <a href="#">
+                    <i class="ri-bar-chart-line"></i>
+                    <span>Trending</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ri-user-6-line"></i>
+                    <span>Account</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="ri-heart-line"></i>
+                    <span>Wishlist</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0" class="t-search">
+                    <i class="ri-search-line"></i>
+                    <span>Search</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#0">
+                    <i class="ri-shopping-cart-line"></i>
+                    <span>Car</span>
+                    <div class="fly-item">
+                      <span class="item-number">0</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- menu bottom -->
+      <div class="search-bottom desktop-hide">
+        <div class="container">
+          <div class="wrapper">
+            <form action="" class="search">
+              <a href="#" class="t-close search-close flexcenter"
+                ><i class="ri-close-line"></i
+              ></a>
+              <span class="icon-large"><i class="ri-search-line"></i></span>
+              <input type="search" placeholder="Your email address" required />
+              <button type="submit">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- search bottom -->
+      <div class="overlay"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
